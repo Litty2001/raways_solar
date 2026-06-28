@@ -1,52 +1,25 @@
+
+> rawaya-solar@0.0.0 start
+> ng serve --host 127.0.0.1 --port 4200
+
 > Building...
 √ Building...
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
-main.js              | main             |  98.07 kB | 
-styles.css           | styles           | 133 bytes | 
+main.js              | main             | 106.08 kB | 
+styles.css           | styles           |   2.75 kB | 
 
-                     | Initial total    |  98.20 kB
+                     | Initial total    | 108.84 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
-main.server.mjs      | main.server      |  99.81 kB | 
+main.server.mjs      | main.server      | 107.83 kB | 
 server.mjs           | server           |   1.84 kB | 
 polyfills.server.mjs | polyfills.server | 268 bytes | 
 
-Application bundle generation complete. [1.526 seconds] - 2026-06-21T16:20:44.111Z
+Application bundle generation complete. [1.760 seconds] - 2026-06-28T09:01:49.734Z
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m4200[22m/[39m
-> Changes detected. Rebuilding...
-√ Changes detected. Rebuilding...
-Application bundle generation failed. [0.211 seconds] - 2026-06-21T16:25:27.395Z
-
-> Changes detected. Rebuilding...
-√ Changes detected. Rebuilding...
-Application bundle generation failed. [0.004 seconds] - 2026-06-21T16:26:48.871Z
-
-> Changes detected. Rebuilding...
-√ Changes detected. Rebuilding...
-Application bundle generation failed. [0.431 seconds] - 2026-06-21T16:27:50.176Z
-
-> Changes detected. Rebuilding...
-√ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-main.js              | main             | 100.54 kB | 
-styles.css           | styles           | 133 bytes | 
-
-                     | Initial total    | 100.68 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-main.server.mjs      | main.server      | 102.29 kB | 
-server.mjs           | server           |   1.84 kB | 
-polyfills.server.mjs | polyfills.server | 268 bytes | 
-
-Application bundle generation complete. [0.429 seconds] - 2026-06-21T16:28:04.920Z
-
-Page reload sent to client(s).

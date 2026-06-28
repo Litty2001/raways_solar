@@ -1,10 +1,10 @@
 :host {
-  --navy: #122033;
-  --blue: #2563eb;
+  --navy: #0b2239;
+  --blue: #005bb8;
   --steel: #667085;
-  --teal: #0f766e;
-  --amber: #d98b12;
-  --amber-dark: #a96300;
+  --teal: #00a99d;
+  --amber: #00c2b8;
+  --amber-dark: #007f78;
   --ink: #1f2937;
   --muted: #64748b;
   --line: #d9e2ec;
@@ -58,24 +58,31 @@ textarea {
 .nav-logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   color: var(--navy);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .logo-mark {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--amber), var(--blue));
-  color: var(--white);
-  font-size: 0.82rem;
-  box-shadow: 0 12px 28px rgba(31, 111, 235, 0.25);
+  display: inline-flex;
+  width: 68px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  flex: 0 0 auto;
+}
+
+.logo-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: scale(1.18);
 }
 
 .nav-links {
@@ -101,7 +108,7 @@ textarea {
 }
 
 .nav-links a:hover {
-  background: #edf5ff;
+  background: #e7f7fb;
   color: var(--blue);
 }
 
@@ -109,11 +116,11 @@ textarea {
   margin-left: 4px;
   background: var(--blue);
   color: var(--white);
-  box-shadow: 0 12px 28px rgba(31, 111, 235, 0.22);
+  box-shadow: 0 12px 28px rgba(0, 91, 184, 0.22);
 }
 
 .nav-links .nav-cta:hover {
-  background: #155dcc;
+  background: #004a98;
   color: var(--white);
 }
 
@@ -124,7 +131,7 @@ section {
 .hero-section {
   position: relative;
   min-height: 100vh;
-  padding: 104px 0 44px;
+  padding: 104px 0 54px;
   overflow: hidden;
   background: #f4f6f8;
 }
@@ -133,8 +140,8 @@ section {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 78% 18%, rgba(217, 139, 18, 0.24), transparent 26%),
-    radial-gradient(circle at 18% 16%, rgba(37, 99, 235, 0.14), transparent 30%),
+    radial-gradient(circle at 78% 18%, rgba(0, 194, 184, 0.24), transparent 26%),
+    radial-gradient(circle at 18% 16%, rgba(0, 91, 184, 0.14), transparent 30%),
     linear-gradient(135deg, #ffffff 0%, #f4f6f8 50%, #e8edf3 100%);
 }
 
@@ -198,6 +205,9 @@ section {
 .hero-title {
   max-width: 760px;
   font-size: clamp(3rem, 7vw, 5.85rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  word-break: break-word;
 }
 
 .hero-subtitle {
@@ -235,14 +245,14 @@ section {
   border: 1px solid var(--blue);
   background: var(--blue);
   color: var(--white);
-  box-shadow: 0 16px 32px rgba(31, 111, 235, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 91, 184, 0.22);
 }
 
 .btn-primary:hover,
 .form-submit:hover {
   transform: translateY(-2px);
-  background: #155dcc;
-  box-shadow: 0 20px 40px rgba(31, 111, 235, 0.28);
+  background: #004a98;
+  box-shadow: 0 20px 40px rgba(0, 91, 184, 0.28);
 }
 
 .btn-outline {
@@ -312,7 +322,7 @@ section {
 .project-grid span:nth-child(11) {
   background:
     linear-gradient(135deg, rgba(255,255,255,0.25), transparent),
-    linear-gradient(135deg, var(--amber), #f0b44b);
+    linear-gradient(135deg, var(--amber), #23d5cc);
 }
 
 .crane-line {
@@ -439,7 +449,7 @@ section {
 
 .about-panel-head {
   height: 86px;
-  background: linear-gradient(135deg, var(--amber), #ffd166);
+  background: linear-gradient(135deg, var(--blue), var(--teal));
 }
 
 .about-panel-body {
@@ -455,7 +465,7 @@ section {
   background:
     linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.5) 50%, transparent 51%),
     linear-gradient(180deg, transparent 49%, rgba(255,255,255,0.5) 50%, transparent 51%),
-    linear-gradient(135deg, #164784, var(--blue));
+    linear-gradient(135deg, var(--blue), var(--teal));
 }
 
 .about-badge-float {
@@ -538,7 +548,7 @@ section {
 .product-card:hover,
 .service-item:hover {
   transform: translateY(-4px);
-  border-color: rgba(31, 111, 235, 0.36);
+  border-color: rgba(0, 169, 157, 0.36);
   box-shadow: 0 20px 42px rgba(16, 42, 67, 0.1);
 }
 
@@ -580,7 +590,7 @@ section {
 }
 
 .products-section {
-  background: linear-gradient(180deg, var(--navy) 0%, #14385b 100%);
+  background: linear-gradient(180deg, var(--navy) 0%, #004a6f 100%);
 }
 
 .products-section .section-tag,
@@ -639,7 +649,7 @@ section {
   background:
     linear-gradient(90deg, transparent 0 18%, #ffffff 18% 24%, transparent 24% 56%, #ffffff 56% 62%, transparent 62%),
     linear-gradient(180deg, transparent 0 30%, rgba(255,255,255,0.65) 30% 36%, transparent 36% 66%, rgba(255,255,255,0.65) 66% 72%, transparent 72%),
-    linear-gradient(135deg, var(--amber), #f0b44b);
+    linear-gradient(135deg, var(--blue), var(--teal));
 }
 
 .contract-icon {
@@ -706,8 +716,8 @@ section {
 
 .why-section {
   background:
-    radial-gradient(circle at 20% 20%, rgba(245, 165, 36, 0.22), transparent 28%),
-    linear-gradient(135deg, #0b1f33 0%, var(--navy) 100%);
+    radial-gradient(circle at 20% 20%, rgba(0, 194, 184, 0.22), transparent 28%),
+    linear-gradient(135deg, #062434 0%, var(--navy) 100%);
 }
 
 .why-grid {
@@ -743,7 +753,7 @@ section {
 }
 
 .why-item-num {
-  background: rgba(245, 165, 36, 0.14);
+  background: rgba(0, 194, 184, 0.14);
   color: var(--amber);
 }
 
@@ -853,7 +863,7 @@ section {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 4px rgba(31, 111, 235, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 91, 184, 0.1);
 }
 
 .form-group textarea {

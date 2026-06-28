@@ -13,7 +13,7 @@ import { isPlatformBrowser } from '@angular/common';
   standalone: true,
   imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
+  styleUrls: ['./home.scss'],
 })
 export class Home implements AfterViewInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
